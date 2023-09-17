@@ -163,6 +163,7 @@
 @media (max-width: 768px) {
     .slider_module {
         flex-direction: column-reverse;
+        gap: 10%;
     }
 
     .buttons_box {
