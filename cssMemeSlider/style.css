@@ -82,6 +82,8 @@
 
 .meme_desc span {
     width: 100%;
+    text-wrap: nowrap;
+    overflow: hidden;
     font-family: open_sans;
     font-size: 150%;
     color: #fff;
@@ -156,4 +158,26 @@
 #radio_3:checked ~ * [for="radio_3"] div,
 #radio_4:checked ~ * [for="radio_4"] div {
     background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .slider_module {
+        flex-direction: column-reverse;
+    }
+
+    .buttons_box {
+        height:fit-content;
+    }
+
+    .desc_wrap {
+        width: 100%;
+    }
+
+    .meme_desc span {
+        font-size: 80%;
+    }
+
+    .button_area div {
+        border: 0.1rem solid #65676f;
+    }
 }
